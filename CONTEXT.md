@@ -37,5 +37,5 @@ A defined calendar span (day or month) over which Consumption and Cost are rolle
 _Avoid_: Range, window
 
 **Incomplete Period**:
-A Period for which at least one expected Interval Reading is missing. Flagged rather than estimated or silently excluded.
+A Period for which at least one expected Interval Reading is missing, including a Period still in progress (it hasn't yet reached the readings expected for its full calendar span). Flagged rather than estimated or silently excluded, and never used in a Period-over-Period comparison until both Periods are complete.
 _Avoid_: Partial period, gap
