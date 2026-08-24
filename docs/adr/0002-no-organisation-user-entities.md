@@ -1,0 +1,3 @@
+# No Organisation/User entities in v1
+
+The domain model is scoped to Building only; there is no Organisation or User entity, and no authentication. GreenOps v1 serves a single Analyst looking at a single Building, so multi-tenancy has no concrete requirement to model yet. We considered adding these entities now as scaffolding for future multi-tenant use, but rejected it: nothing in this slice differentiates one org or user from another, so the entities would be unused structure carried ahead of need. Introducing multi-tenancy later will require retrofitting ownership onto Building and adding access control, which is a real cost this decision accepts in exchange for not over-building now.
