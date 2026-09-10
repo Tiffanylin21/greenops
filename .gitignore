@@ -10,4 +10,4 @@ coverage/
 *.sqlite-journal
 
 .DS_Store
-*.log
+*.log.vite/
